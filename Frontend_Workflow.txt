@@ -1,0 +1,47 @@
+Frontend Workflow:
+Theme: Space (Black/Gray)
+Pages: 
+1) Metrics
+	i) Contains Graphs/Labels (2 Graphs and 5 labels for 5 models each)
+2) Crater Detection
+	i) I/O Images
+	ii) ML Model Parameters (Asynchornous)
+	iii) Past Attempts (Most 10)
+	iv) Zooming Feature
+	v) Forwarding to other models
+3) Depth Estimation
+	i) I/O Images
+	ii) ML Model Parameters (Asynchornous)
+	iii) Past Attempts (Most 10)
+	iv) Forwarding to other models
+4) Terrain Mapping
+	i) I/O Images
+	ii) ML Model Parameters (Asynchornous)
+	iii) Past Attempts (Most 10)
+	iv) Vocal Navigation
+	v) Forwarding to other models
+5) Terrian Classification
+	i) List of Cards (Terrain Type: Image, Infomation)
+6) 3D Interpolation
+Components: 
+1) Input Image
+	i) Drag&Drop Feature
+	ii) Should Support gif
+2) Output Image
+	i) Drag&Drop Feature
+	ii) Should Support gif
+3) Parameter Selection
+	i) Rows of Parameter to choose from (List of input boxes)
+4) Google Drive Integration
+	i) Images should be able to be fetched from Gdrive 
+5) Image List
+	i) Grid of Images to choose from for the Input Images
+	ii) Should Remember the past 10 input-output entries
+6) Graphs List (Metrics Page)
+	i) List of Graphs (Line, Pie, Scatter)
+7) Metrics List (Metrics Page)
+	i) List of Metrics Label for each model (5 models)
+8) Zoom/Scale/Panning Feature
+	i) For Image
+	ii) For Graph
+	

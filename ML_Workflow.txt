@@ -1,0 +1,38 @@
+ML Workflow:
+1) Models:
+	i) Super Resolution (Done)
+		-> Upscale the resoultion of images
+		-> Compare the upscaled TMC images with OHRC images
+		-> Compare with other models
+	ii) Crater Detection (Done)
+		-> Detecting Elliptical Objects
+		-> Superimposing the above on lunar images
+		-> Identifying rim length and possible depth
+		-> Compare with other models
+	iii) Crater Mapping (Done)
+		-> Mapping many craters 
+	iv) Depth Estimation (Done-Left)
+		-> Calculating the depth of the surface.
+		-> Finding Craters/Plateau
+		-> Use this information for crater detection
+	v) Terrain Classification (Left)
+		-> Classifying various regions based on the occurrence/size/type of craters/plateau
+		-> Classification based on danger level.
+	vi) Terrain Mapping (Left)
+		-> Creating a path for the lunar bot to travel
+		-> Finding checkpoints based on least resistance and least cost possible
+		-> Voice Assisstant
+	vii) 3D Interpolation (Left)
+		-> Converting the 2D path to 3D visual
+2) Metrics and Measurement: (Left)
+	i) Tracking each change
+	ii) Storing each models' metrics
+3) ML Integration:
+	i) Linear Chain
+		-> Resolution-Crater-Depth Model
+	ii) Tree Chain
+		-> Terrain Classification
+		-> Terrain Mapping
+	ii) Optional Chain
+		-> 3D Interpolation
+

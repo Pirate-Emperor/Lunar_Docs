@@ -1,0 +1,54 @@
+Key Terms:
+1) RDB -> Residual Dense Blocks -> To extract local features from the convoluted matrix 
+2) Convolution Layer Output -> Transfer the features (distinguishing feature) to every other position of the image to see how the features match that area. 
+  			    -> Like for matching a 'O' character will require curve (feature) around each corner cube => Convolution of image with all the features
+3) ReLU -> Rectified Linear Unit -> Transform Function
+4) Pooling Layer -> To reduce the larger feature matrix to get a condensed and approximated output (usually max of a particular window of certain size)
+5) RPN -> Region Proposal Network -> Convolution Netowrk used for predicting object bound
+6) FPN -> Feature Pyramid Network -> Feature Extractor for single image to provide multi-level feature map in convolutional manner
+7) Ellipse R-CNN (Region based convolutional neural network) -> To infer elliptical objects from the image
+8) DenseNet -> Dense CNN -> Used during intermediate accuracy improvement during long stage layers in the model by letting the future layers have access of previous layers
+	    -> Used for generating the terrain map (To combine and improve the result of each processes that happens during the model creation)
+9) Monocular Deep Transform -> Estimating the depth value (distance relative to the camera) of each pixel given a single (monocular) RGB image using gradient descent to train the model.
+
+Process:
+1) Image Super Resolution -> Convert low resolution moon image into higher resolution
+2) Depth Estimation -> Estimation the depth of the moon surface using the depth mask (For both low res and high res images)
+3) Crater Detection -> Detecting craters using the result from depth estimation to get accurate result
+4) Use the information from the crater detection (areas regarded as craters) for the accurate creation of hazard map (based of depth => improving depth estimation)
+5) Terrain Mapping -> Creating a geographical map based on the output of the above models/processes.
+6) Ultimately, a hazard map will be created for the moon excavation missson.
+
+Lunar Navigation:
+Generation of Hazard map at 1m grid spacing (1m height resolution) using 5m spatial resolution data for safely navigating a Lander to a safe landing site using Super resolution techniques.
+
+Super Resolution:
+1) Objective of this section is to upscale and improve the quality of low resolution images taken by terrain mapping cameras from ISRO.
+2) Keras: Model Processing, Training, Evaluation. Main function is Deep Feature Extraction used in perpetual loss.
+3) GANS (Generative Adversarial Network): A discriminator network based on super-scaling residual in Residual Dense Network (RSD).
+
+Crater Detection:
+1) Objective of this section is to provide with a terrain relative navigation by identifying crater rim from the high resolution TMC images to safe guard the lunar navigation.
+2) Ellipse R-CNN model is being used to identify craters from the provided images.
+3) Elliptical Object Detection includes two components - Mask R-CNN for elliptical Object retrieval and U-Net Semantic Segmentation) for learning different occlusion patterns
+4) Open CV: For using pre-trained Computer Vision Models.
+
+Crater Matching (Crater Pattern Identification):
+1) Objective: It is used to identify the pattern in the craters found from the images to provide faster crater recognition.
+
+Visual Terrain Relative Navigation:
+1) Identifying Lunar Surface Features like craters depth, boulder, rifts, slope to help avoid hazards during lunar navigation.
+2) Terrain Classification: DenseNet is used to segregate the images into different segments based on CNN. It is useful for route planning and obstacle avoidance.
+3) Depth Estimation: Pix2Pix and GANs are used for depth estimation of moon's surface from the relative position at which the image was captured.
+
+Show Stopper:
+1) The feature-based transform is harder to train, and require some hyperparameter tuning and loss balancing 
+2) Lighting Conditions: Moon's surface has areas of permanent shadow or of strong sunlight.
+3) Regular Updates: Due to the dynamic environment of the moon.
+4) To improve the resolution of the images from terrain relative cameras.
+
+Dependencies:
+1) ML models (Deep Learning Models).
+2) Computational Resources.
+3) Fine tuning of Generative models.
+4) Image Processing.
