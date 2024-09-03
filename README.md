@@ -2,41 +2,41 @@
 
 ## Screenshots
 ### Slope
-![screenshot1](super_slope_hazard.png)
-![screenshot2](slope_mask.png)
-![screenshot3](slope_hazard.png)
-![screenshot4](super_slope_hazard.png)
-![screenshot5](output_super_slope_dtm.png)
-![screenshot6](output_slope_dtm.png)
+![screenshot1](images/super_slope_hazard.png)
+![screenshot2](images/slope_mask.png)
+![screenshot3](images/slope_hazard.png)
+![screenshot4](images/super_slope_hazard.png)
+![screenshot5](images/output_super_slope_dtm.png)
+![screenshot6](images/output_slope_dtm.png)
 
 ### Crater
-![screenshot7](super_crater_hazard.png)
-![screenshot8](super_crater_mask.png)
-![screenshot9](crater_mask.png)
-![screenshot10](crater_hazard.png)
+![screenshot7](images/super_crater_hazard.png)
+![screenshot8](images/super_crater_mask.png)
+![screenshot9](images/crater_mask.png)
+![screenshot10](images/crater_hazard.png)
 
 ### Shadow
-![screenshot11](shadow_hazard.png)
-![screenshot12](shadow_mask.png)
-![screenshot13](super_shadow_hazard.png)
-![screenshot14](super_shadow_mask.png)
+![screenshot11](images/shadow_hazard.png)
+![screenshot12](images/shadow_mask.png)
+![screenshot13](images/super_shadow_hazard.png)
+![screenshot14](images/super_shadow_mask.png)
 
 ### Hazard
-![screenshot15](hazard_map.png)
-![screenshot16](hazard_map_critical.png)
-![screenshot17](hazard_mask.png)
-![screenshot18](hazard_mask_critical.png)
+![screenshot15](images/hazard_map.png)
+![screenshot16](images/hazard_map_critical.png)
+![screenshot17](images/hazard_mask.png)
+![screenshot18](images/hazard_mask_critical.png)
 ![screenshot19](super_hazard_critical_compare.png)
-![screenshot20](super_hazard_map.png)
-![screenshot21](super_hazard_map_critical.png)
-![screenshot22](super_hazard_mask.png)
-![screenshot23](super_hazard_mask_critical.png)
+![screenshot20](images/super_hazard_map.png)
+![screenshot21](images/super_hazard_map_critical.png)
+![screenshot22](images/super_hazard_mask.png)
+![screenshot23](images/super_hazard_mask_critical.png)
 
 ### Combined
-![screenshot24](super_hazard_mask.png)
-![screenshot25](super_hazard_map.png)
-![screenshot26](hazard_mask.png)
-![screenshot27](hazard_map.png)
+![screenshot24](images/super_hazard_mask.png)
+![screenshot25](images/super_hazard_map.png)
+![screenshot26](images/hazard_mask.png)
+![screenshot27](images/hazard_map.png)
 
 ## Abstract
 
