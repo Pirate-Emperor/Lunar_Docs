@@ -26,7 +26,7 @@
 ![screenshot16](images/hazard_map_critical.png)
 ![screenshot17](images/hazard_mask.png)
 ![screenshot18](images/hazard_mask_critical.png)
-![screenshot19](super_hazard_critical_compare.png)
+![screenshot19](images/super_hazard_critical_compare.png)
 ![screenshot20](images/super_hazard_map.png)
 ![screenshot21](images/super_hazard_map_critical.png)
 ![screenshot22](images/super_hazard_mask.png)
